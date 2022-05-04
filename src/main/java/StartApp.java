@@ -9,6 +9,13 @@ public class StartApp {
         account.withdraw(Float.valueOf(500), date("14/01/2021"));
 
         account.printStatements();
+    	System.out.println();  
+        //Print only deposit
+        account.printStatements(true, false);
+    	System.out.println();  
+        //Print only withdraw
+        account.printStatements(false, true);
+    	System.out.println();  
     }
 
     public static Date date(String date){
